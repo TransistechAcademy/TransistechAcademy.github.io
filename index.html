@@ -44,29 +44,6 @@
 .popup:hover {
   transform: scale(1.05);
 }
-// Function to display the pop-up
-    function openPopup() {
-      document.getElementById('overlay').style.display = 'block';
-      document.getElementById('popup').style.display = 'block';
-     
-      // Close the pop-up after 5 seconds
-      setTimeout(function() {
-        closePopup();
-      }, 5000);
-    }
-  
-
-    // Function to close the pop-up
-    function closePopup() {
-      document.getElementById('overlay').style.display = 'none';
-      document.getElementById('popup').style.display = 'none';
-    }
-
-    // Call openPopup() function when the page loads
-    window.onload = openPopup;
-  </script>
-
-
 
 
     .close-btn {
@@ -91,8 +68,9 @@
    
   </div>
 </head>
-
 <body>
+
+    
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
