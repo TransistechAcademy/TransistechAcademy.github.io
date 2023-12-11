@@ -14,6 +14,62 @@
         </script>
     </head>
     <body>
+         <!-- Styles for the pop-up -->
+  <style>
+    .overlay {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .popup {
+  display: block;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #3498db;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.popup:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Overlay background -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Pop-up box -->
+  <div class="popup" id="popup">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <h2>Welcome to Transistech Academy!</h2>
+    <p>Coding For Children</p>
+   
+  </div>
+</head>
+
+<body>
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
@@ -83,12 +139,12 @@
 
             <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
+                <h2 class="section-title">Academy Objective</h2>
 
                 <div class="skills__container bd-grid">          
                     <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">I am a fast learner and have the ability to produce many solutions to problems with less time. always keen on to learn more new skills.</p>
+                        <h2 class="skills__subtitle">ِProfessional skills</h2>
+                        <p class="skills__text">...</p>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <img src="assets/img/python_icon.png" alt="  ">
@@ -140,20 +196,7 @@
                         
                         </div>
                         
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <img src="assets/img/plc_icon.png" alt="  ">
-                                <span class="skills__name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PLC</span>
-                            </div>
-                            <div class="skills__bar skills__plc">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
+                        
                     <div>              
                         <img src="assets/img/cover.jpg" alt="" class="skills__img">
                     </div>
